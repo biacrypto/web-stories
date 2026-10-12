@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/10/how-to-earn-3-4-yield-on-tokenized-us.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-12T10:29:56+0500</news:publication_date>
+      <news:title>How to Earn 3-4% Yield on Tokenized US Treasury Bills: A Beginner's Guide to RWA Crypto (2026)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/usdt-faces-eu-deadline-what-happens-to.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-11T20:24:29+0500</news:publication_date>
+      <news:title>USDT Faces EU Deadline: What Happens to Your Tether Holdings After January 8 (Beginner's Guide, October 2026)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/trending-bitcoin-and-ether-etfs-just.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-11T14:41:21+0500</news:publication_date>
+      <news:title>(TRENDING) Bitcoin and Ether ETFs Just Lost Nearly $1 Billion in October: What It Means for Your Staking and Yield Plans (Beginner's Guide)</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/10/token-unlocks-why-111-billion-in-crypto.html</loc>
     <news:news>
       <news:publication>
@@ -43,28 +76,6 @@
       </news:publication>
       <news:publication_date>2026-10-10T13:39:00+0500</news:publication_date>
       <news:title>(TRENDING) Google Just Gave AI Agents Their Own Email: What the Gemini Agent Means for Your Crypto Research</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/standard-chartered-says-usde-could-8x.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-09T23:46:30+0500</news:publication_date>
-      <news:title>Standard Chartered Says USDe Could 8x by 2028: What That Means for Your Stablecoin Yield (Beginner's Guide)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/ai-agents-are-about-to-start-paying.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-09T14:25:08+0500</news:publication_date>
-      <news:title>AI Agents Are About to Start Paying With Crypto: What TOKEN2049's Biggest Claim Means for You</news:title>
     </news:news>
   </url>
 </urlset>
