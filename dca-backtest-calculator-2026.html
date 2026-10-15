@@ -1,0 +1,251 @@
+<!--- ═══════════════════════════════════════════════════════════════
+  BLOGGER PASTE INSTRUCTIONS
+  ───────────────────────────────────────────────────────────────
+  1. Blogger → New Post (or Page) → pencil icon → HTML view.
+  2. Copy this ENTIRE file and paste it into the HTML view.
+  3. Publish (or save as a static Page). Done — no second step needed.
+  ═══════════════════════════════════════════════════════════════ --->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DCA Backtest Calculator 2026",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Free DCA backtest calculator: see what monthly crypto investing (BTC, ETH, SOL, ADA) would have returned since 2019, vs lump-sum investing. Educational tool only."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is DCA (dollar-cost averaging)?", "acceptedAnswer": { "@type": "Answer", "text": "Dollar-cost averaging means investing a fixed amount at regular intervals (e.g. $100/month into BTC) regardless of price. You buy more coins when prices are low and fewer when prices are high, which smooths out volatility over time." } },
+    { "@type": "Question", "name": "Does DCA beat lump-sum investing?", "acceptedAnswer": { "@type": "Answer", "text": "In rising markets, lump-sum usually wins because money enters earlier. DCA wins in falling or choppy markets because it buys the dips. This tool backtests both side by side so you can see which won for each coin and period." } },
+    { "@type": "Question", "name": "Is this DCA calculator using real prices?", "acceptedAnswer": { "@type": "Answer", "text": "No — the tool uses illustrative monthly closing prices (updated Oct 2026) for education and comparison purposes only. It is not financial advice and past performance doesn't predict future results." } }
+  ]
+}
+</script>
+
+<p>What if you had invested a fixed amount in <strong>Bitcoin, Ethereum, Solana or Cardano every month</strong> instead of trying to time the market? This <strong>free DCA backtest calculator</strong> shows what monthly investing since 2019 would have returned — and compares it to investing everything at once (lump sum). No signup.</p>
+
+<style>
+.dca-wrap{max-width:700px;margin:25px auto;background:#0a1628;border-radius:16px;padding:26px 22px;color:#fff;box-shadow:0 8px 30px rgba(0,0,0,.25);font-family:inherit;}
+.dca-wrap h3{color:#d4af37;margin:0 0 6px 0;text-align:center;font-size:21px;}
+.dca-wrap .dca-sub{text-align:center;color:#9fb3c8;font-size:13px;margin:0 0 16px 0;}
+.dca-wrap label{display:block;font-size:14px;color:#9fb3c8;margin:12px 0 6px 0;}
+.dca-wrap input[type=number],.dca-wrap input[type=month],.dca-wrap select{width:100%;padding:12px;border-radius:8px;border:1px solid #334155;background:#111f36;color:#fff;font-size:16px;box-sizing:border-box;}
+.dca-wrap input[type=month]{color-scheme:dark;}
+.dca-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.dca-bigbtn{width:100%;margin-top:18px;padding:14px;border:none;border-radius:10px;background:#d4af37;color:#0a1628;font-size:17px;font-weight:bold;cursor:pointer;}
+.dca-bigbtn:hover{background:#e5c04b;}
+.dca-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;}
+.dca-stat{background:#111f36;border-radius:10px;padding:12px 14px;}
+.dca-stat .dca-k{font-size:12px;color:#9fb3c8;margin-bottom:4px;}
+.dca-stat .dca-v{font-size:19px;font-weight:bold;}
+.dca-pos{color:#4ade80;} .dca-neg{color:#f87171;} .dca-gold{color:#d4af37;} .dca-blue{color:#7dd3fc;}
+.dca-compare{margin-top:16px;background:#111f36;border-radius:10px;padding:14px 16px;font-size:14px;line-height:1.7;}
+.dca-bw{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;}
+.dca-bw div{background:#0d1a30;border:1px solid #1e293b;border-radius:10px;padding:10px 12px;font-size:13px;}
+.dca-chartbox{margin-top:16px;background:#0d1a30;border:1px solid #1e293b;border-radius:10px;padding:12px;}
+.dca-legend{display:flex;gap:16px;justify-content:center;font-size:12px;color:#9fb3c8;margin-top:8px;}
+.dca-legend span i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:5px;border-radius:2px;}
+.dca-note{font-size:12px;color:#7d93aa;margin-top:14px;text-align:center;line-height:1.6;}
+.dca-note2{font-size:13px;color:#9fb3c8;margin-top:10px;background:#0d1a30;border-radius:8px;padding:10px 12px;line-height:1.6;}
+@media(max-width:480px){.dca-row2,.dca-stats,.dca-bw{grid-template-columns:1fr 1fr;}.dca-stat .dca-v{font-size:17px;}}
+</style>
+
+<div class="dca-wrap">
+<h3>📈 DCA Backtest Calculator</h3>
+<p class="dca-sub">Updated: October 2026 · BTC, ETH, SOL, ADA · Illustrative data</p>
+
+<label>Coin</label>
+<select id="dca-coin">
+<option value="BTC">Bitcoin (BTC)</option>
+<option value="ETH">Ethereum (ETH)</option>
+<option value="SOL">Solana (SOL)</option>
+<option value="ADA">Cardano (ADA)</option>
+</select>
+
+<label>Monthly investment (USD $)</label>
+<input type="number" id="dca-amt" value="100" min="1" />
+
+<div class="dca-row2">
+<div><label>Start month</label><input type="month" id="dca-start" value="2021-01" min="2019-01" max="2026-09" /></div>
+<div><label>End month</label><input type="month" id="dca-end" value="2026-09" min="2019-01" max="2026-09" /></div>
+</div>
+
+<label>Monthly fee % (optional — exchange/trading fees)</label>
+<input type="number" id="dca-fee" value="0" min="0" max="20" step="0.1" />
+
+<button class="dca-bigbtn" onclick="dcaCalc()">Run Backtest →</button>
+
+<div id="dca-out"></div>
+
+<p class="dca-note">Data: illustrative monthly closes, updated Oct 2026 — not live prices.<br>Educational tool only — not financial advice. Past performance doesn't predict future results.</p>
+</div>
+
+<script>
+/* Illustrative monthly closing prices (USD), 2019-01 → 2026-09. null = coin didn't exist yet. */
+var DCA_PX = {
+BTC:{name:"Bitcoin (BTC)",px:{
+2019:[3430,3870,4120,5340,8620,10700,9540,9630,8290,9160,7540,7200],
+2020:[9320,8550,6420,8780,9420,9140,11340,11660,10790,13800,19680,29000],
+2021:[33110,45000,58850,57670,37330,35040,41600,47280,43820,61320,56900,46220],
+2022:[38480,43190,45520,37650,31790,19900,23300,20110,19420,20480,17150,16540],
+2023:[23120,23110,28470,29230,27210,30480,29260,26090,26970,34480,37720,42270],
+2024:[42620,61280,71330,60660,67100,62670,64670,59090,63320,70470,96660,93360],
+2025:[102100,84500,82500,94600,104600,107200,116400,108200,114000,109800,87000,93000],
+2026:[89000,95000,102000,97500,108000,115000,121000,118000,124000,null,null,null]}},
+ETH:{name:"Ethereum (ETH)",px:{
+2019:[105,135,142,160,270,290,213,170,180,185,152,130],
+2020:[215,220,134,209,242,226,340,355,354,388,585,737],
+2021:[1310,1415,1920,2770,2700,2270,2530,3420,3010,4270,4570,3680],
+2022:[2670,2920,3280,2770,1960,1070,1640,1550,1330,1580,1210,1195],
+2023:[1580,1600,1820,1870,1900,1930,1870,1690,1670,1810,2020,2290],
+2024:[2290,3280,3530,2980,3740,3410,3270,2730,2620,2510,3700,3360],
+2025:[3250,2450,1900,1790,2480,2460,3800,4320,4090,3870,2900,3100],
+2026:[3300,3600,3900,3750,4100,4400,4650,4480,4800,null,null,null]}},
+SOL:{name:"Solana (SOL)",px:{
+2019:[null,null,null,null,null,null,null,null,null,null,null,null],
+2020:[null,null,null,null,null,null,null,2.3,2.4,2.0,1.5,1.5],
+2021:[3.5,12,19.6,42,33,33,35,103,140,204,202,173],
+2022:[96,97,135,105,45,33,40,32,32,33,14,10],
+2023:[24,22,21,22,21,15,25,20,24,38,60,102],
+2024:[103,132,203,128,172,143,181,131,154,179,265,190],
+2025:[238,150,125,148,160,150,190,215,205,195,140,130],
+2026:[135,150,170,160,185,200,215,205,230,null,null,null]}},
+ADA:{name:"Cardano (ADA)",px:{
+2019:[0.042,0.043,0.069,0.078,0.082,0.087,0.060,0.050,0.041,0.047,0.040,0.034],
+2020:[0.053,0.063,0.032,0.050,0.053,0.105,0.137,0.113,0.097,0.094,0.153,0.173],
+2021:[0.35,1.30,1.20,1.32,1.74,1.39,1.35,2.85,2.17,2.03,1.65,1.39],
+2022:[1.05,0.90,1.20,0.83,0.48,0.46,0.52,0.45,0.43,0.40,0.31,0.25],
+2023:[0.38,0.39,0.39,0.40,0.38,0.29,0.31,0.26,0.25,0.29,0.38,0.60],
+2024:[0.52,0.63,0.60,0.46,0.46,0.40,0.41,0.34,0.36,0.35,1.17,0.86],
+2025:[0.95,0.68,0.67,0.70,0.73,0.58,0.85,0.82,0.80,0.72,0.50,0.45],
+2026:[0.50,0.55,0.62,0.58,0.68,0.75,0.82,0.78,0.88,null,null,null]}}
+};
+var DCA_MN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function dcaPx(coin,ym){var y=+ym.slice(0,4),m=+ym.slice(5,7);var r=DCA_PX[coin].px[y];return r?r[m-1]:null;}
+function dcaLbl(ym){return DCA_MN[+ym.slice(5,7)-1]+" "+ym.slice(0,4);}
+function dcaMonths(a,b){var r=[],y=+a.slice(0,4),m=+a.slice(5,7),ey=+b.slice(0,4),em=+b.slice(5,7),n=0;
+while((y<ey||(y===ey&&m<=em))&&n<500){r.push(y+"-"+String(m).padStart(2,"0"));if(m===12){m=1;y++;}else m++;n++;}return r;}
+function dcaMoney(v){return "$"+v.toLocaleString("en-US",{maximumFractionDigits:0});}
+function dcaMoney2(v){return "$"+v.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function dcaK(v){if(v>=1000)return "$"+(v/1000).toFixed(1)+"k";return "$"+v.toFixed(0);}
+function dcaChart(serA,serB,lbls){
+  var W=620,H=230,P=40,n=serA.length;if(n<2)return "";
+  var all=serA.concat(serB),mn=Math.min.apply(null,all),mx=Math.max.apply(null,all);
+  if(mx===mn)mx=mn+1;var pad=(mx-mn)*0.08;mn-=pad;mx+=pad;
+  function X(i){return n===1?P:P+i*(W-2*P)/(n-1);}
+  function Y(v){return H-P-(v-mn)/(mx-mn)*(H-2*P);}
+  var h='<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block;" role="img">';
+  var ticks=[mn+pad,mn+(mx-mn)/2,mx-pad];
+  for(var t=0;t<3;t++){var yy=Y(ticks[t]);
+    h+='<line x1="'+P+'" y1="'+yy+'" x2="'+(W-8)+'" y2="'+yy+'" stroke="#1e293b" stroke-width="1"/>';
+    h+='<text x="'+(P-6)+'" y="'+(yy+4)+'" fill="#7d93aa" font-size="11" text-anchor="end">'+dcaK(ticks[t])+"</text>";}
+  h+='<text x="'+P+'" y="'+(H-8)+'" fill="#7d93aa" font-size="11">'+lbls[0]+'</text>';
+  h+='<text x="'+(W-8)+'" y="'+(H-8)+'" fill="#7d93aa" font-size="11" text-anchor="end">'+lbls[n-1]+"</text>";
+  function pts(s){var p=[];for(var i=0;i<s.length;i++)p.push(X(i).toFixed(1)+","+Y(s[i]).toFixed(1));return p.join(" ");}
+  h+='<polyline points="'+pts(serB)+'" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="6,4" opacity="0.9"/>';
+  h+='<polyline points="'+pts(serA)+'" fill="none" stroke="#d4af37" stroke-width="2.5"/>';
+  h+='<circle cx="'+X(n-1)+'" cy="'+Y(serA[n-1])+'" r="4" fill="#d4af37"/>';
+  h+='<text x="'+(X(n-1)-8)+'" y="'+(Y(serA[n-1])-10)+'" fill="#d4af37" font-size="12" font-weight="bold" text-anchor="end">'+dcaMoney(serA[n-1])+"</text>";
+  h+="</svg>";
+  return h;
+}
+function dcaCalc(){
+  var coin=document.getElementById("dca-coin").value;
+  var amt=parseFloat(document.getElementById("dca-amt").value)||0;
+  var s=document.getElementById("dca-start").value||"2021-01";
+  var e=document.getElementById("dca-end").value||"2026-09";
+  var fee=Math.min(20,Math.max(0,parseFloat(document.getElementById("dca-fee").value)||0));
+  var out=document.getElementById("dca-out");
+  if(amt<=0){out.innerHTML='<p class="dca-note2">Enter a monthly investment above $0.</p>';return;}
+  if(s>e){out.innerHTML='<p class="dca-note2">Start month must be before the end month.</p>';return;}
+  var months=dcaMonths(s,e),net=amt*(1-fee/100),cum=0,invested=0,skipped=0;
+  var serA=[],serB=[],lbls=[],contribs=[];
+  var firstPx=null;
+  for(var i=0;i<months.length;i++){
+    var p=dcaPx(coin,months[i]);
+    if(p===null||p<=0){skipped++;continue;}
+    if(firstPx===null)firstPx=p;
+    var bought=net/p;cum+=bought;invested+=amt;
+    var val=cum*p;
+    serA.push(val);lbls.push(dcaLbl(months[i]));
+    contribs.push({ym:months[i],p:p,bought:bought});
+  }
+  if(contribs.length===0){out.innerHTML='<p class="dca-note2">No price data for that period ('+DCA_PX[coin].name+' data starts Aug 2020 for SOL).</p>';return;}
+  var endPx=dcaPx(coin,contribs[contribs.length-1].ym);
+  var lumpCoins=(invested*(1-fee/100))/firstPx;
+  for(var j=0;j<contribs.length;j++){serB.push(lumpCoins*contribs[j].p);}
+  var finalVal=cum*endPx, gain=finalVal-invested;
+  var ret=invested>0?gain/invested*100:0;
+  var years=contribs.length/12;
+  var ann=(invested>0&&finalVal>0&&years>0)?(Math.pow(finalVal/invested,1/years)-1)*100:0;
+  var lumpVal=lumpCoins*endPx, lumpGain=lumpVal-invested;
+  var lumpRet=invested>0?lumpGain/invested*100:0;
+  var diff=finalVal-lumpVal;
+  var best=contribs[0],worst=contribs[0];
+  for(var k=0;k<contribs.length;k++){var mult=contribs[k].p;if(mult<best.p)best=contribs[k];if(mult>worst.p)worst=contribs[k];}
+  function bwLine(c){var w=c.bought*endPx;return dcaMoney(c.bought* c.p)+" → <b>"+dcaMoney(w)+"</b> ("+(endPx/c.p).toFixed(2)+"×)";}
+  var gcls=gain>=0?"dca-pos":"dca-neg";
+  var h='<div class="dca-stats">';
+  h+='<div class="dca-stat"><div class="dca-k">Total invested</div><div class="dca-v">'+dcaMoney(invested)+'</div></div>';
+  h+='<div class="dca-stat"><div class="dca-k">Final portfolio value</div><div class="dca-v dca-gold">'+dcaMoney(finalVal)+'</div></div>';
+  h+='<div class="dca-stat"><div class="dca-k">Net gain / loss</div><div class="dca-v '+gcls+'">'+(gain>=0?"+":"")+dcaMoney(gain)+'</div></div>';
+  h+='<div class="dca-stat"><div class="dca-k">Total return</div><div class="dca-v '+gcls+'">'+(ret>=0?"+":"")+ret.toFixed(1)+'%</div></div>';
+  h+='<div class="dca-stat"><div class="dca-k">Annualized return (approx)</div><div class="dca-v '+gcls+'">'+(ann>=0?"+":"")+ann.toFixed(1)+'%</div></div>';
+  h+='<div class="dca-stat"><div class="dca-k">Contributions</div><div class="dca-v">'+contribs.length+'</div></div>';
+  h+="</div>";
+  h+='<div class="dca-chartbox">'+dcaChart(serA,serB,lbls)+'<div class="dca-legend"><span><i style="background:#d4af37;"></i>DCA portfolio value</span><span><i style="background:#7dd3fc;"></i>Lump sum ('+dcaMoney(invested)+' at start)</span></div></div>';
+  h+='<div class="dca-compare"><b>⚖️ DCA vs lump sum</b><br>Investing the full '+dcaMoney(invested)+' at once in '+dcaLbl(contribs[0].ym)+' would be worth <b class="dca-blue">'+dcaMoney(lumpVal)+'</b> ('+(lumpRet>=0?"+":"")+lumpRet.toFixed(1)+'% return).<br>';
+  if(Math.abs(diff)<1)h+="Both strategies ended about equal this time.";
+  else if(diff>0)h+='DCA came out ahead by <b class="dca-pos">'+dcaMoney(diff)+'</b> — buying the dips paid off.';
+  else h+='Lump sum came out ahead by <b class="dca-pos">'+dcaMoney(-diff)+'</b> — in a mostly rising market, earlier money wins.';
+  h+="</div>";
+  h+='<div class="dca-bw"><div>🏆 <b>Best monthly buy:</b><br>'+dcaLbl(best.ym)+' @ '+dcaMoney2(best.p)+'<br>'+bwLine(best)+'</div>';
+  h+='<div>📉 <b>Worst monthly buy:</b><br>'+dcaLbl(worst.ym)+' @ '+dcaMoney2(worst.p)+'<br>'+bwLine(worst)+'</div></div>';
+  if(skipped>0)h+='<p class="dca-note2">Note: '+skipped+' month(s) had no price data and were skipped (no contribution counted).</p>';
+  if(fee>0)h+='<p class="dca-note2">A '+fee+'% fee was deducted from every contribution (and from the lump-sum buy).</p>';
+  out.innerHTML=h;
+}
+["dca-coin","dca-amt","dca-start","dca-end","dca-fee"].forEach(function(id){
+  document.getElementById(id).addEventListener("input",dcaCalc);
+  document.getElementById(id).addEventListener("change",dcaCalc);
+});
+dcaCalc();
+</script>
+
+<h2>How Dollar-Cost Averaging Works</h2>
+<p>DCA is the simplest investing strategy there is: <strong>invest the same dollar amount on a fixed schedule</strong> — say $100 on the 1st of every month — no matter what the price is doing. When the price drops, your $100 buys more coins. When it rises, it buys fewer. Over time this smooths out the wild swings crypto is famous for.</p>
+<p>The chart in the tool above tells the story better than words: the gold line is your DCA portfolio growing month by month, and the dashed blue line is what would have happened if you'd put everything in on day one. Run it across the 2022 bear market and the 2024–2025 rally to see how each strategy behaved.</p>
+
+<h2>DCA vs Lump Sum: Which Wins?</h2>
+<p>There's no universal winner — it depends on the market:</p>
+<ul>
+<li><strong>Lump sum usually wins in steady uptrends.</strong> Money invested earlier has more time to grow.</li>
+<li><strong>DCA usually wins in crashes and choppy markets.</strong> Fixed buys automatically load up at the bottom.</li>
+<li><strong>DCA wins psychologically, always.</strong> No regret from "buying the top," no panic decisions — the schedule decides for you.</li>
+</ul>
+<p>For most beginners, DCA's real edge is behavioral: it's the strategy you'll actually stick with. Our <a href="https://www.biacryptotrading.com/2026/10/crypto-staking-rewards-calculator-2026.html">staking calculator</a> pairs well with this — DCA to accumulate, staking to earn yield on top.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is DCA (dollar-cost averaging)?</h3>
+<p>Investing a fixed amount at regular intervals regardless of price. You automatically buy more when prices are low and less when they're high.</p>
+<h3>Does DCA beat lump-sum investing?</h3>
+<p>Sometimes. Lump sum wins in rising markets; DCA wins in falling or sideways markets. The tool above backtests both so you can compare for any coin and period.</p>
+<h3>Are these real historical prices?</h3>
+<p>No — the tool uses illustrative monthly closes (updated Oct 2026) for educational comparison, not live market data. Always check live prices on an exchange before investing.</p>
+<h3>How much should I invest monthly?</h3>
+<p>Only what you can afford to lose. A common beginner rule: a small fixed % of income that you won't miss if it drops 50%. This tool is for learning — not financial advice.</p>
+
+<h2>What Next?</h2>
+<p>Once you've found a DCA rhythm you like, put the coins to work: read <a href="https://www.biacryptotrading.com/2026/10/genius-act-explained-us-stablecoin-law-2026_01668211929.html">how the new US stablecoin law affects your crypto earnings</a> or estimate earnings with our <a href="https://www.biacryptotrading.com/2026/10/crypto-staking-rewards-calculator-2026.html">staking rewards calculator</a>. <a href="https://www.biacryptotrading.com">Follow AI Crypto Insights</a> for weekly passive-income strategies.</p>
+
+<div style="background:#fffbeb; border:1px solid #fcd34d; border-radius:10px; padding:14px 18px; margin:25px 0; font-size:14px; color:#92400e;">
+<strong>⚠️ Disclaimer:</strong> Educational tool only — not financial advice. Past performance doesn't predict future results. Prices shown are illustrative sample data, not live market prices.
+</div>
