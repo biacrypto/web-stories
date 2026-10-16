@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/10/yield-farming-vs-staking-whats-real.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-16T10:30:13+0500</news:publication_date>
+      <news:title>Yield Farming vs Staking: What's the Real Difference? (Beginner's Guide 2026)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/hot-vs-cold-wallets-for-stakers-which.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T19:53:19+0500</news:publication_date>
+      <news:title>Hot vs Cold Wallets for Stakers: Which Is Safer? (Beginner's Guide 2026)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/what-happens-to-your-money-if-usdc.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-15T14:41:41+0500</news:publication_date>
+      <news:title>What Happens to Your Money If USDC Depegs? The Beginner's Safety Guide (2026)</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/10/bitcoin-etf-vs-self-custody-which.html</loc>
     <news:news>
       <news:publication>
@@ -43,39 +76,6 @@
       </news:publication>
       <news:publication_date>2026-10-14T11:47:09+0500</news:publication_date>
       <news:title>What's the Minimum Money You Need to Start Earning Crypto Yield? (The Honest Math, 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/apy-vs-apr-in-crypto-difference-that.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-13T19:42:09+0500</news:publication_date>
-      <news:title>APY vs APR in Crypto: The Difference That Quietly Costs You Money (Beginner's Guide 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/exchange-staking-vs-self-custody-where.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-13T16:11:41+0500</news:publication_date>
-      <news:title>Exchange Staking vs Self-Custody: Where Beginners Actually Earn More (2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/how-to-unstake-crypto-unbonding-periods.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-13T11:07:53+0500</news:publication_date>
-      <news:title>How to Unstake Crypto: Unbonding Periods Explained (ETH, SOL, DOT, ADA, ATOM)</news:title>
     </news:news>
   </url>
 </urlset>
