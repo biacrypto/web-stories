@@ -2,14 +2,80 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/10/mpc-wallet-vs-seed-phrase.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-20T10:46:12+0500</news:publication_date>
+      <news:title>What Is an MPC Wallet — and Is It Safer Than a Seed Phrase? (Beginner's Guide 2026)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/treasurys-foreign-stablecoin-audit-what.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T22:32:58+0500</news:publication_date>
+      <news:title>Treasury's Foreign Stablecoin Audit: What It Means for USDT</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/genius-act-october-rule-sprint.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T22:31:25+0500</news:publication_date>
+      <news:title>GENIUS Act: The October Rule Sprint</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/whats-safest-stablecoin-for-yield.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T22:29:56+0500</news:publication_date>
+      <news:title>What's the Safest Stablecoin for Yield?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/can-you-live-off-crypto-staking-income.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T22:26:19+0500</news:publication_date>
+      <news:title>Can You Live Off Crypto Staking Income?</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/10/crypto-taxes-for-beginners-what-you.html</loc>
     <news:news>
       <news:publication>
         <news:name>Bia Crypto</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-19T19:37:14+0500</news:publication_date>
+      <news:publication_date>2026-10-19T19:52:51+0500</news:publication_date>
       <news:title>Crypto Taxes for Beginners: What You Actually Owe (2026 Guide)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.biacryptotrading.com/2026/10/how-to-lock-down-your-crypto-exchange.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-19T14:26:45+0500</news:publication_date>
+      <news:title>How to Lock Down Your Crypto Exchange Account: A Beginner's Security Guide (2026)</news:title>
     </news:news>
   </url>
   <url>
@@ -43,50 +109,6 @@
       </news:publication>
       <news:publication_date>2026-10-18T14:33:11+0500</news:publication_date>
       <news:title>Crypto "Earn" vs Staking: What's the Difference? (Beginner's Guide 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/should-you-invest-borrowed-money-in.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-18T10:34:18+0500</news:publication_date>
-      <news:title>Should You Invest Borrowed Money in Bitcoin? The Honest Risk Math (2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/why-is-everyone-afraid-to-spend-their.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T19:32:46+0500</news:publication_date>
-      <news:title>Why Is Everyone Afraid to Spend Their Bitcoin? (The Real Reasons, 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/how-to-mentally-survive-losing-money-in.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T14:24:32+0500</news:publication_date>
-      <news:title>How to Mentally Survive Losing Money in Crypto (A Beginner's Guide 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/where-do-governments-keep-their-bitcoin.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-17T11:33:08+0500</news:publication_date>
-      <news:title>Where Do Governments Keep Their Bitcoin? (The Honest Answer, 2026)</news:title>
     </news:news>
   </url>
 </urlset>
