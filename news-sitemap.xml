@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/10/dex-vs-cex-guide.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-20T19:54:00+0500</news:publication_date>
+      <news:title>How Do DeFi Exchanges Work? DEX vs Centralized Exchanges Explained (2026)</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/10/best-crypto-wallets-to-earn-interest.html</loc>
     <news:news>
       <news:publication>
@@ -98,28 +109,6 @@
       </news:publication>
       <news:publication_date>2026-10-19T10:30:28+0500</news:publication_date>
       <news:title>Is DCA Into Bitcoin Still Worth It in 2026? The Honest Beginner's Guide</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/gold-vs-crypto-which-is-better.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-18T19:36:44+0500</news:publication_date>
-      <news:title>Gold vs Crypto: Which Is the Better Investment for Beginners? (Honest 2026 Guide)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/crypto-earn-vs-staking-whats-difference.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-18T14:33:11+0500</news:publication_date>
-      <news:title>Crypto "Earn" vs Staking: What's the Difference? (Beginner's Guide 2026)</news:title>
     </news:news>
   </url>
 </urlset>
