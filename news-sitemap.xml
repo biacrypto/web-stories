@@ -2,13 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/10/crypto-to-crypto-swap-tax-uk-cgt-rules.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-22T11:21:02+0500</news:publication_date>
+      <news:title>Is a Crypto-to-Crypto Swap Taxable in the UK? CGT Rules + Worked Examples (2026/27)</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/10/best-crypto-passive-income-strategies-2026.html</loc>
     <news:news>
       <news:publication>
         <news:name>Bia Crypto</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-21T19:40:00+0500</news:publication_date>
+      <news:publication_date>2026-10-21T19:56:22+0500</news:publication_date>
       <news:title>Best Crypto Passive Income Strategies 2026 (Ranked)</news:title>
     </news:news>
   </url>
@@ -54,83 +65,6 @@
       </news:publication>
       <news:publication_date>2026-10-20T14:29:30+0500</news:publication_date>
       <news:title>The Best Crypto Wallets to Earn Interest (Beginner's Guide 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/mpc-wallet-vs-seed-phrase.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-20T10:46:12+0500</news:publication_date>
-      <news:title>What Is an MPC Wallet — and Is It Safer Than a Seed Phrase? (Beginner's Guide 2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/treasurys-foreign-stablecoin-audit-what.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T22:32:58+0500</news:publication_date>
-      <news:title>Treasury's Foreign Stablecoin Audit: What It Means for USDT</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/genius-act-october-rule-sprint.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T22:31:25+0500</news:publication_date>
-      <news:title>GENIUS Act: The October Rule Sprint</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/whats-safest-stablecoin-for-yield.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T22:29:56+0500</news:publication_date>
-      <news:title>What's the Safest Stablecoin for Yield?</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/can-you-live-off-crypto-staking-income.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T22:26:19+0500</news:publication_date>
-      <news:title>Can You Live Off Crypto Staking Income?</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/crypto-taxes-for-beginners-what-you.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T19:52:51+0500</news:publication_date>
-      <news:title>Crypto Taxes for Beginners: What You Actually Owe (2026 Guide)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/how-to-lock-down-your-crypto-exchange.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-19T14:26:45+0500</news:publication_date>
-      <news:title>How to Lock Down Your Crypto Exchange Account: A Beginner's Security Guide (2026)</news:title>
     </news:news>
   </url>
 </urlset>
