@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/10/what-is-form-1099-da-irs-crypto.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-24T11:03:02+0500</news:publication_date>
+      <news:title>What Is Form 1099-DA? IRS Crypto Reporting Rules for 2026</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/10/how-to-use-cgt-allowance-crypto-uk.html</loc>
     <news:news>
       <news:publication>
@@ -43,28 +54,6 @@
       </news:publication>
       <news:publication_date>2026-10-22T11:21:02+0500</news:publication_date>
       <news:title>Is a Crypto-to-Crypto Swap Taxable in the UK? CGT Rules + Worked Examples (2026/27)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/best-crypto-passive-income-strategies-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-21T19:56:22+0500</news:publication_date>
-      <news:title>Best Crypto Passive Income Strategies 2026 (Ranked)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/10/beginner-friendly-ways-to-invest-in.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-21T14:53:30+0500</news:publication_date>
-      <news:title>Beginner-Friendly Ways to Invest in Bitcoin (2026 Starter Guide)</news:title>
     </news:news>
   </url>
 </urlset>
