@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/11/do-you-pay-tax-when-you-unstake-crypto-us.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-04T10:24:12+0500</news:publication_date>
+      <news:title>Do You Pay Tax When You Unstake Crypto in the US?</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/11/what-happens-staked-crypto-exchange-bankrupt.html</loc>
     <news:news>
       <news:publication>
@@ -21,17 +32,6 @@
       </news:publication>
       <news:publication_date>2026-11-02T10:30:14+0500</news:publication_date>
       <news:title>Do You Pay Tax on Crypto Gifts in the US? $19,000 Exclusion and Carryover Basis Explained</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/11/crypto-dca-calculator-work-out-your.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-01T12:25:50+0500</news:publication_date>
-      <news:title>Crypto DCA Calculator — Work Out Your Average Cost, Coins Bought and Final Value (Free Tool)</news:title>
     </news:news>
   </url>
 </urlset>
