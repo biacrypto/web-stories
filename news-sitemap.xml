@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/11/is-rlusd-safe-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07T10:41:52+0500</news:publication_date>
+      <news:title>Is RLUSD Safe? Ripple's OCC Bank Approval, Moody's Rating and the Yield Rules Explained</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/11/is-kraken-safe-legit-2026.html</loc>
     <news:news>
       <news:publication>
@@ -10,17 +21,6 @@
       </news:publication>
       <news:publication_date>2026-11-06T10:37:12+0500</news:publication_date>
       <news:title>Is Kraken Safe and Legit in 2026? Regulation, Proof of Reserves and the Real Risks Checked</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/11/do-you-pay-tax-when-you-bridge-crypto-us.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-05T10:33:51+0500</news:publication_date>
-      <news:title>Do You Pay Tax When You Bridge Crypto in the US?</news:title>
     </news:news>
   </url>
 </urlset>
