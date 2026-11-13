@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.biacryptotrading.com/2026/11/can-you-lose-money-staking-crypto.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Bia Crypto</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T10:37:04+0500</news:publication_date>
+      <news:title>Can You Lose Money Staking Crypto? 5 Risks Beginners Miss (2026)</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.biacryptotrading.com/2026/11/can-you-live-off-crypto-staking-income.html</loc>
     <news:news>
       <news:publication>
@@ -10,17 +21,6 @@
       </news:publication>
       <news:publication_date>2026-11-12T10:33:49+0500</news:publication_date>
       <news:title>Can You Live Off Crypto Staking Income? The Honest Math (2026)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.biacryptotrading.com/2026/11/what-is-crypto-restaking-risks-rewards-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Bia Crypto</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T10:38:57+0500</news:publication_date>
-      <news:title>What Is Crypto Restaking? Risks, Rewards and the 2026 Reality Check</news:title>
     </news:news>
   </url>
 </urlset>
